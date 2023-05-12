@@ -17,16 +17,12 @@ import {
 
 import login from './src/components/login'
 import Todolist from './src/components/todolist';
-import trial from './src/components/trial'
-import t2 from './src/components/t2'
 
 
 const Stack = createStackNavigator()
 function MyStack(){
   return(
     <Stack.Navigator>
-      {/* <Stack.Screen name='trial' component={trial} options={{ headerShown:false }}/> */}
-      {/* <Stack.Screen name='t2' component={t2} options={{ headerShown:false }}/> */}
   <Stack.Screen name='login' component={login} options={{ headerShown:false }}/>
   <Stack.Screen name='Todolist' component={Todolist} options={{ headerShown:false }}/>
   </Stack.Navigator>
